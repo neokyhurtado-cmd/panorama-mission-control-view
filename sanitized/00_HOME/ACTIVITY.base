@@ -1,0 +1,21 @@
+name: Actividad reciente
+description: Notas modificadas recientemente en Mission Control
+filters:
+  and:
+    - 'file.ext == "md"'
+    - 'file.mtime > now() - "14d"'
+    - not:
+        - 'file.folder.startsWith("98_ARCHIVE")'
+properties:
+  file.folder:
+    displayName: Area
+  file.mtime:
+    displayName: Actualizado
+views:
+  - type: table
+    name: Ultimos 14 dias
+    limit: 30
+    order:
+      - file.name
+      - file.folder
+      - file.mtime

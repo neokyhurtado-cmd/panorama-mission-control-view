@@ -1,0 +1,31 @@
+name: Cotizaciones
+description: Vista honesta del inventario de cotizaciones y futuras notas tipo quotation
+filters:
+  or:
+    - 'note.type == "quotation"'
+    - 'file.path == "06_INVENTORIES/2026-09-13_BOOTSTRAP_QUOTATION_INDEX.md"'
+properties:
+  note.year:
+    displayName: Ano
+  note.client:
+    displayName: Cliente
+  note.status:
+    displayName: Estado
+  file.mtime:
+    displayName: Actualizado
+views:
+  - type: table
+    name: Indice
+    order:
+      - file.name
+      - note.year
+      - note.client
+      - note.status
+      - file.mtime
+  - type: list
+    name: Recientes
+    limit: 30
+    order:
+      - file.name
+      - note.client
+      - note.year

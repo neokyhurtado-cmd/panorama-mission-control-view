@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PANORAMA — Mission Control (Preview)</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --card: #161b22;
+    --border: #30363d;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --accent: #58a6ff;
+    --green: #3fb950;
+    --yellow: #d29922;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+          background: var(--bg); color: var(--text); line-height: 1.6;
+          padding: 2rem; }
+  .container { max-width: 1100px; margin: 0 auto; }
+  h1 { border-bottom: 1px solid var(--border); padding-bottom: .5rem;
+        margin-bottom: 1.5rem; }
+  h2 { margin: 1.5rem 0 .5rem; color: var(--muted); font-size: .9rem;
+        text-transform: uppercase; letter-spacing: .05em; }
+  .kpi-grid { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem; }
+  .kpi-card { background: var(--card); border: 1px solid var(--border);
+               border-radius: 8px; padding: 1rem 1.5rem; min-width: 120px; }
+  .kpi-card.dim { opacity: 0.5; }
+  .kpi-value { font-size: 2rem; font-weight: 700;
+                color: var(--accent, #58a6ff); }
+  .kpi-label { font-size: .8rem; color: var(--muted); margin-top: .25rem; }
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
+                gap: 1rem; margin-bottom: 2rem; }
+  .card { background: var(--card); border: 1px solid var(--border);
+           border-radius: 8px; padding: 1rem; }
+  .card-header { font-size: 1.1rem; font-weight: 600; margin-bottom: .5rem; }
+  .card-meta { font-size: .8rem; color: var(--muted); margin-bottom: .5rem; }
+  ul { list-style: none; }
+  ul li { padding: .4rem 0; border-bottom: 1px solid var(--border); }
+  .meta { color: var(--muted); font-size: .85rem; margin-left: .5rem; }
+  .graph-cols { columns: 3; column-gap: 2rem; }
+  .graph-cols li { font-size: .85rem; color: var(--muted); border: none; padding: .2rem 0; }
+  .system-row { display: flex; gap: 1rem; flex-wrap: wrap; margin: 1rem 0;
+                 font-size: .85rem; color: var(--muted); }
+  .system-row span { background: var(--card); border: 1px solid var(--border);
+                      border-radius: 4px; padding: .25rem .75rem; }
+  .callout { background: var(--card); border-left: 3px solid var(--accent);
+              padding: .75rem 1rem; margin: .5rem 0; border-radius: 0 4px 4px 0; }
+  blockquote { color: var(--muted); border-left: 3px solid var(--border);
+                padding-left: 1rem; margin: .5rem 0; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            font-size: .8rem; color: var(--muted); text-align: center; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>🌐 PANORAMA — Mission Control</h1>
+
+<div class="system-row">
+  <span>🟢 Mission Control: <strong>LIVE</strong></span>
+  <span>🔄 Sync: PASS</span>
+  <span>📊 Bases: CORE</span>
+  <span>🔌 Dataview: 0</span>
+  <span>📅 2026-09-13</span>
+</div>
+
+<h2>Command View</h2>
+
+<div class="kpi-grid">
+  <div class="kpi-card">
+    <div class="kpi-value">5</div>
+    <div class="kpi-label">Active Projects</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-value">19</div>
+    <div class="kpi-label">Client Notes</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-value">5</div>
+    <div class="kpi-label">Items Need Attention</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-value">0</div>
+    <div class="kpi-label">Decisions Logged</div>
+  </div>
+  <div class="kpi-card dim">
+    <div class="kpi-value">N/D</div>
+    <div class="kpi-label">Quotations</div>
+  </div>
+</div>
+
+<div class="callout">
+  KPI values are certified from vault audit. Quotations = N/D until inventory is certified.
+  <br>This is a <strong>sanitized preview</strong> — full vault is in Obsidian.
+</div>
+
+<h2>Projects</h2>
+<div class="card-grid">
+
+    <div class="card">
+      <div class="card-header">📁 ARCHITECTURE</div>
+      <div class="card-meta">Status: </div>
+      <p># IA-VISION — ARCHITECTURE
+
+```text
+PROVENANCE:
+  DEVICE_ID: [REDACTED]
+  AGENT_ID: [REDACTED]
+  SESSION_ID: [REDACTED]
+  TIMESTAMP_UTC: 2026-09-13T02:28:23Z
+```
+
+## Components
+
+(To be populated as pr</p>
+    </div>
+    <div class="card">
+      <div class="card-header">📁 DECISIONS</div>
+      <div class="card-meta">Status: </div>
+      <p># IA-VISION — DECISIONS
+
+```text
+PROVENANCE:
+  DEVICE_ID: [REDACTED]
+  AGENT_ID: [REDACTED]
+  SESSION_ID: [REDACTED]
+  TIMESTAMP_UTC: 2026-09-13T02:28:23Z
+```
+
+## Decision log
+
+| Date | Decision | Rat</p>
+    </div>
+    <div class="card">
+      <div class="card-header">📁 EVIDENCE</div>
+      <div class="card-meta">Status: </div>
+      <p># IA-VISION — EVIDENCE
+
+```text
+PROVENANCE:
+  DEVICE_ID: [REDACTED]
+  AGENT_ID: [REDACTED]
+  SESSION_ID: [REDACTED]
+  TIMESTAMP_UTC: 2026-09-13T02:22:43Z
+```
+
+## Evidence pointers
+
+(To be populated —</p>
+    </div>
+    <div class="card">
+      <div class="card-header">📁 EVIDENCE_INDEX</div>
+      <div class="card-meta">Status: </div>
+      <p># IA-VISION — EVIDENCE_INDEX
+
+```text
+PROVENANCE:
+  DEVICE_ID: [REDACTED]
+  AGENT_ID: [REDACTED]
+  SESSION_ID: [REDACTED]
+  TIMESTAMP_UTC: 2026-09-13T02:28:23Z
+  RESULT: EVIDENCE_INDEX created; EVIDEN</p>
+    </div>
+    <div class="card">
+      <div class="card-header">📁 INVENTORY</div>
+      <div class="card-meta">Status: </div>
+      <p># IA-VISION — INVENTORY
+
+```text
+PROVENANCE:
+  DEVICE_ID: [REDACTED]
+  AGENT_ID: [REDACTED]
+  SESSION_ID: [REDACTED]
+  TIMESTAMP_UTC: 2026-09-13T02:28:23Z
+```
+
+## Project inventory
+
+| Resource | Locat</p>
+    </div>
+    <div class="card">
+      <div class="card-header">📁 OPEN_QUESTIONS</div>
+      <div class="card-meta">Status: </div>
+      <p># IA-VISION — OPEN QUESTIONS
+
+```text
+PROVENANCE:
+  DEVICE_ID: [REDACTED]
+  AGENT_ID: [REDACTED]
+  SESSION_ID: [REDACTED]
+  TIMESTAMP_UTC: 2026-09-13T02:28:23Z
+```
+
+## Open questions (require decision</p>
+    </div>
+    <div class="card">
+      <div class="card-header">🔬 PROJECT</div>
+      <div class="card-meta">Status: RESEARCH</div>
+      <p># IA-VISION
+
+```text
+PROVENANCE:
+  DEVICE_ID: [REDACTED]
+  AGENT_ID: [REDACTED]
+  SESSION_ID: [REDACTED]
+  TIMESTAMP_UTC: 2026-09-13T02:28:23Z
+  RESULT: PROJECT.md created per 9-file canonical contr</p>
+    </div>
+    <div class="card">
+      <div class="card-header">📁 PROJECT_PROTOCOL</div>
+      <div class="card-meta">Status: </div>
+      <p># IA-VISION — PROJECT_PROTOCOL
+
+```text
+PROVENANCE:
+  DEVICE_ID: [REDACTED]
+  AGENT_ID: [REDACTED]
+  SESSION_ID: [REDACTED]
+  TIMESTAMP_UTC: 2026-09-13T02:28:23Z
+```
+
+## Operating protocol
+
+### Bounda</p>
+    </div>
+    <div class="card">
+      <div class="card-header">📁 RESEARCH</div>
+      <div class="card-meta">Status: </div>
+      <p># IA-VISION — RESEARCH
+
+```text
+PROVENANCE:
+  DEVICE_ID: [REDACTED]
+  AGENT_ID: [REDACTED]
+  SESSION_ID: [REDACTED]
+  TIMESTAMP_UTC: 2026-09-13T02:28:23Z
+```
+
+## Active research topics
+
+- Classical ba</p>
+    </div>
+    <div class="card">
+      <div class="card-header">📁 STATE</div>
+      <div class="card-meta">Status: </div>
+      <p># IA-VISION — STATE
+
+```text
+PROVENANCE:
+  DEVICE_ID: [REDACTED]
+  AGENT_ID: [REDACTED]
+  SESSION_ID: [REDACTED]
+  TIMESTAMP_UTC: 2026-09-13T02:22:43Z
+```
+
+## Description
+
+YOLO-vNEXT, RF-DETR-vNEXT, S</p>
+    </div>
+</div>
+
+<h2>Clients</h2>
+<ul>
+<li>ARQ_ANGEL <span class="meta">cliente/proyecto</span></li><li>ASYDU <span class="meta">cliente/proyecto</span></li><li>CICLOPUENTO <span class="meta">cliente/proyecto</span></li><li>CICLO_ESPACIOS <span class="meta">proyecto vial/ciclovía</span></li><li>CLINICA_CASTELLANA <span class="meta">proyecto PMT</span></li><li>COLPATRIA <span class="meta">cliente/proyecto</span></li><li>CONCOCRETO <span class="meta">cliente/proyecto</span></li><li>CTIC_IDU <span class="meta">cliente/proyecto</span></li><li>FERREIRA <span class="meta">cliente/proyecto</span></li><li>MUTIS <span class="meta">cliente/proyecto</span></li><li>OCTAVIO_MILLAN <span class="meta">cliente/proyecto</span></li><li>PANORAMA_INGENIERIA_Y_ARQUITECTOS_SAS <span class="meta">Sociedad por Acciones Simplificada</span></li><li>PROINAN_SAS <span class="meta">cliente/proyecto</span></li><li>PROYECTOS_URBAN <span class="meta">cliente/proyecto</span></li><li>ROCA_INGENIERIA <span class="meta">cliente/proyecto</span></li><li>TRIANGULO_BAVARIA <span class="meta">cliente/proyecto</span></li><li>U_MILITAR <span class="meta">cliente/proyecto</span></li><li>VICTOR_SARMIENTO <span class="meta">cliente/proyecto</span></li><li>WILSON_BRAVO <span class="meta">cliente/proyecto</span></li>
+</ul>
+
+<h2>Knowledge Graph (sample links)</h2>
+<ul class="graph-cols">
+<li>CLIENTS_INDEX → 03_CLIENTS/COLPATRIA</li>
+<li>CLIENTS_INDEX → 03_CLIENTS/CTIC_IDU</li>
+<li>CLIENTS_INDEX → 03_CLIENTS/FERREIRA</li>
+<li>CLIENTS_INDEX → 03_CLIENTS/MUTIS</li>
+<li>CLIENTS_INDEX → 03_CLIENTS/WILSON_BRAVO</li>
+<li>CLIENTS_INDEX → 07_EVIDENCE/DISCOVERY_LEDGER</li>
+<li>CLIENTS_INDEX → 90_INBOX/README</li>
+<li>CLIENTS_INDEX → CLIENTS.base</li>
+<li>CLIENTS_INDEX → MISSION_CONTROL</li>
+<li>COTIZACIONES_INDEX → 06_INVENTORIES/2026-09-13_BOOTSTRAP_QUOTATION_INDEX</li>
+<li>COTIZACIONES_INDEX → MISSION_CONTROL</li>
+<li>COTIZACIONES_INDEX → QUOTATIONS.base</li>
+<li>DISCOVERY_LEDGER → 01_PROJECTS/IA-VISION</li>
+<li>DISCOVERY_LEDGER → 01_PROJECTS/N1N3_Streetwear</li>
+<li>DISCOVERY_LEDGER → 01_PROJECTS/PANORAMA</li>
+<li>DISCOVERY_LEDGER → 01_PROJECTS/TRAFFICLAB-CONTROL</li>
+<li>DISCOVERY_LEDGER → 02_COMPANY</li>
+<li>DISCOVERY_LEDGER → 03_CLIENTS/ASYDU</li>
+<li>DISCOVERY_LEDGER → 03_CLIENTS/CICLO_ESPACIOS</li>
+<li>DISCOVERY_LEDGER → 03_CLIENTS/CLINICA_CASTELLANA</li>
+<li>DISCOVERY_LEDGER → 03_CLIENTS/COLPATRIA</li>
+<li>DISCOVERY_LEDGER → 03_CLIENTS/CTIC_IDU</li>
+<li>DISCOVERY_LEDGER → 03_CLIENTS/FERREIRA</li>
+<li>DISCOVERY_LEDGER → 03_CLIENTS/MUTIS</li>
+<li>DISCOVERY_LEDGER → 03_CLIENTS/OCTAVIO_MILLAN</li>
+<li>DISCOVERY_LEDGER → 03_CLIENTS/PANORAMA_INGENIERIA_Y_ARQUITECTOS_SAS</li>
+<li>DISCOVERY_LEDGER → 03_CLIENTS/WILSON_BRAVO</li>
+<li>DISCOVERY_LEDGER → 04_RESEARCH/QUOTATIONS_2024</li>
+<li>DISCOVERY_LEDGER → 04_RESEARCH/QUOTATIONS_2025</li>
+<li>DISCOVERY_LEDGER → 04_RESEARCH/QUOTATIONS_2026</li>
+<li>DISCOVERY_LEDGER → 06_INVENTORIES/MASTER_INDEX_ONEDRIVE_2026</li>
+<li>DISCOVERY_LEDGER → 06_INVENTORIES/trafficlab_db_POINTER</li>
+<li>DISCOVERY_LEDGER → 90_INBOX/project_candidates/Pagina_Cerebra</li>
+<li>GRAPH_VIEW → wikilink</li>
+<li>GRAPH_VIEW → wikilinks</li>
+<li>MASTER_INDEX_ONEDRIVE_2026 → 00_Indice/MASTER_INDEX</li>
+<li>MISSION_CONTROL → 04_RESEARCH/README</li>
+<li>MISSION_CONTROL → 05_DECISIONS/README</li>
+<li>MISSION_CONTROL → 07_EVIDENCE/DISCOVERY_LEDGER</li>
+<li>MISSION_CONTROL → 07_EVIDENCE/README</li>
+<li>MISSION_CONTROL → 09_PROTOCOLS/CANARY_IDENTITY_TEST</li>
+<li>MISSION_CONTROL → 09_PROTOCOLS/CANARY_PURPOSE_TEST</li>
+<li>MISSION_CONTROL → 90_INBOX/README</li>
+<li>MISSION_CONTROL → 99_SYSTEM/README</li>
+<li>MISSION_CONTROL → ACTIVITY.base</li>
+<li>MISSION_CONTROL → CLIENTS.base</li>
+<li>MISSION_CONTROL → CLIENTS_INDEX</li>
+<li>MISSION_CONTROL → COTIZACIONES_INDEX</li>
+<li>MISSION_CONTROL → DECISIONS.base</li>
+<li>MISSION_CONTROL → GRAPH_VIEW</li>
+</ul>
+
+<footer>
+  PANORAMA Mission Control · Sanitized preview · Source: panorama-mission-control (private GitHub)
+  <br>Generated 2026-09-13 05:38 UTC
+</footer>
+
+</div>
+</body>
+</html>

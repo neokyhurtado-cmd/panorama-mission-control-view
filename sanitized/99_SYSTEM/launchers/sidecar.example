@@ -1,0 +1,21 @@
+# =====================================================
+# Mission Control local sidecar — UNTRACKED, HOST-SPECIFIC
+# =====================================================
+# Copy this file to one of:
+#   99_SYSTEM/launchers/.env.local     ← RECOMMENDED
+#   $HOME/.config/panorama-mission-control/sync.env
+# =====================================================
+
+# Required — identity
+HOST_ROLE=HERMES_PERSONAL
+DEVICE_ID=PANO-DEV-xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx
+AGENT_ID=PANO-AGENT-hermes-orchestrator-XXXXXXXXXXXX
+
+# Required — paths (READ by launcher as: REPO_DIR, VAULT_ID, OBSIDIAN_EXE, MISSION_HOME_FILE)
+REPO_DIR=/c/Users/David/tmp_panorama_mc
+OBSIDIAN_EXE=/c/Users/David/AppData/Local/Programs/obsidian/Obsidian.exe
+VAULT_ID=panorama-mission-control
+MISSION_HOME_FILE=00_HOME/MISSION_CONTROL.md
+
+# Optional — scan authority (set true on exactly ONE host)
+ONEDRIVE_SCAN_AUTHORITY=false
